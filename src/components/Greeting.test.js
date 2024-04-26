@@ -29,7 +29,7 @@ describe('Greeting  component', () => {
         const outputElement = screen.getByText('Changed', {exact : false});
         expect(outputElement).toBeInTheDocument();
     });
-    test(`don't render good to seee you text if button was clicked`, () => {
+    test(`does not render good to seee you text if button was clicked`, () => {
         //Act
         render(<Greeting />);
         // Assign
